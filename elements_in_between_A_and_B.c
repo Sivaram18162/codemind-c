@@ -19,6 +19,6 @@ int main()
     if(f==0)
     {
         printf("-1");
+        return 0;
     }
-    return 0;
 }
