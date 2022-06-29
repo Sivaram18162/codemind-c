@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int n,c=0,k=0,j,i,s[100],dc=0;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+            if(n%i==0)
+            {
+                s[k]=i;
+                k++;
+            }
+    }
+    for(i=1;i<=k;i++)
+    {
+        c=0;
+        for(j=1;j<=s[i];j++)
+        {
+            if(s[i]%j==0)
+            {
+                c++;
+            }
+        }
+        if(c>2)
+        {
+           dc++; 
+        }
+    }
+    printf("%d",dc+1);
+}
