@@ -16,8 +16,9 @@ int main()
         {
             if(i==0 || j==0 || i==a-1 || j==b-1)
             {
-               s=s+arr[i][j];
+                s=s+arr[i][j];
             }
+           
         }
     }
     printf("%d",s);
