@@ -2,29 +2,26 @@
 #include<math.h>
 int main()
 {
-    int a,b,j,i,c=0,cl=0;
-    scanf("%d",&a);
-    scanf("%d",&b);
-    if(a==1)
+    int n,i,fc=0,m,c=0,j,flag=0;
+    scanf("%d%d",&n,&m);
+    for(i=n;i<=m;i++)
     {
-        a=2;
-    }
-    for(j=a;j<=b;j++)
-    {
-        c=0;
-        for(i=2;i<=sqrt(j);i++)
+        if(i==1)
         {
-            if(j%i==0)
+            continue;
+        }
+        fc=0;
+        flag=0;
+        for(j=2;j<=sqrt(i);j++)
+        {
+            if(i%j==0)
             {
-                c++;
+                flag=1;
+                break;
             }
         }
-    
-        if(c==0)
-        {
-           cl++;
-         }
-    
+        if(flag==0)
+        c++;
     }
-    printf("%d",cl);
+    printf("%d",c);
 }
