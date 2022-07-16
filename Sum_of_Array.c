@@ -8,8 +8,8 @@ int main()
         scanf("%d",&arr[i]);
     }
     for(i=0;i<n;i++)
-        {
-            s=s+arr[i];
-        }
+    {
+        s=s+arr[i];
+    }
     printf("%d",s);
 }
